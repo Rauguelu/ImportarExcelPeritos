@@ -14,8 +14,8 @@ public class AsignaEspecialidades {
 	
 	public static void main(String[] args) {
 		
-		// Conexi�n a la base de datos MySQL
-		String url = "jdbc:mysql://10.44.130.21:3306/Peritos2013";
+		// Conexion a la base de datos MySQL
+		String url = "jdbc:mysql://:3306/Peritos2013";
 		String user = "root";
 		String password = "gtjclm";
 		List<String> listadoTerminos  = new ArrayList<String>();
