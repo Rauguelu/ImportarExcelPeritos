@@ -43,11 +43,11 @@ public class ExcelToMySQL {
 	
 	public static void main(String[] args) {
 		
-		// Para cargar masivamente los archivos excel es necesarios renombrarlos todos y utilizar numeración secuencial.
+		// Para cargar masivamente los archivos excel es necesarios renombrarlos todos y utilizar numeraciÃ³n secuencial.
 		// Por ejemplo llamarlos: "file(1).xls" , "file(2).xls"... 
 
-		// Conexión a la base de datos MySQL
-		String url = "jdbc:mysql://10.44.130.21:3306/Peritos2013";
+		// ConexiÃ³n a la base de datos MySQL
+		String url = "jdbc:mysql://:3306/Peritos2013";
 		String user = "root";
 		String password = "gtjclm";
 
@@ -84,7 +84,7 @@ public class ExcelToMySQL {
 				Sheet sheet = workbook.getSheetAt(0);
 				// Recorrer cada fila de la hoja
 				for (Row row : sheet) {
-					// Saltarse la primera fila que contiene los títulos de las columnas
+					// Saltarse la primera fila que contiene los tÃ­tulos de las columnas
 					if (row.getRowNum() == 0) {
 						continue;
 					}
@@ -123,7 +123,7 @@ public class ExcelToMySQL {
 				inputStream.close();
 			}
 
-			// Cerrar la conexión a la base de datos
+			// Cerrar la conexiÃ³n a la base de datos
 			con.close();
 		} catch (Exception e) {
 			e.printStackTrace();
